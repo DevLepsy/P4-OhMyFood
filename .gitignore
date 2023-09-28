@@ -1,0 +1,45 @@
+#node_modules# Ignore les fichiers et répertoires générés par le système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Ignore les fichiers de configuration d'éditeurs
+.vscode/
+
+
+# Ignore les dépendances et les fichiers générés par des gestionnaires de paquets
+node_modules/
+
+
+
+
+# Ignore les fichiers d'environnement ou de configuration
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Ignore les fichiers de sauvegarde
+*.bak
+
+# Ignore les fichiers de logs et de données temporaires
+*.log
+*.tmp
+
+
+
+
+
+# Ignore les fichiers de gestionnaire de packages (yarn.lock, package-lock.json)
+
+package-lock.json
+
+
+
+
+
+# Ignore les fichiers de configuration pour les outils de linting ou de formatage
+.eslintrc
+.stylelintrc
+.prettierignore
