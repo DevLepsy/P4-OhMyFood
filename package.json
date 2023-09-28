@@ -1,0 +1,15 @@
+{
+  "name": "p4-ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet n°4 du parcours de formation Intégrateur Web d'Openclassrooms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
