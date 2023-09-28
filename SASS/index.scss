@@ -1,0 +1,17 @@
+@import "./settings.scss";
+
+/**** COMPONENTS ****/
+@import "./components/logo.scss";
+@import "./components/button.scss";
+@import "./components/restaurant-card.scss";
+@import "./components/heart.scss";
+
+/****** LAYOUT ******/
+@import "./layout/loader.scss";
+@import "./layout/header.scss";
+@import "./layout/location.scss";
+@import "./layout/browser.scss";
+@import "./layout/research.scss";
+@import "./layout/operation.scss";
+@import "./layout/restaurants.scss";
+@import "./layout/footer.scss";
