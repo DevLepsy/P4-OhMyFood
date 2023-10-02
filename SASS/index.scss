@@ -1,17 +1,21 @@
-@import "./settings.scss";
+@import "./base/_colors";
+@import "./base/fonts/_font";
+@import "./base/_global";
 
 /**** COMPONENTS ****/
-@import "./components/logo.scss";
-@import "./components/button.scss";
-@import "./components/restaurant-card.scss";
-@import "./components/heart.scss";
+@import "./components/_logo";
+@import "./components/_button";
+@import "./components/_restaurant-card";
+@import "./components/_heart";
+@import "./components/_header";
 
 /****** LAYOUT ******/
-@import "./layout/loader.scss";
-@import "./layout/header.scss";
-@import "./layout/location.scss";
-@import "./layout/browser.scss";
-@import "./layout/research.scss";
-@import "./layout/operation.scss";
-@import "./layout/restaurants.scss";
-@import "./layout/footer.scss";
+@import "./layout/_loader";
+@import "./layout/_visit";
+@import "./layout/_location";
+@import "./layout/_process";
+@import "./layout/_operation";
+@import "./layout/_restaurants";
+@import "./components/_footer";
+
+/****** PAGES ******/
