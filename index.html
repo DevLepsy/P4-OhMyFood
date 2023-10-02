@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood, application web de commande de repas en ligne.</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <meta
       name="description"
       content="OhMyFood est la nouvelle application web qui vous propose de commander et de créer votre propre menu en ligne"
@@ -14,5 +20,57 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo__header-title">ohmyfood</h1>
+      </header>
+
+      <main>
+        <div class="location">
+          <i class="fa-soild fa-location-dot"></i>
+          <input
+            type="search"
+            class="location__text"
+            name="location"
+            id="location"
+            placeholder="Paris, Belleville"
+          />
+        </div>
+
+        <section class="visit">
+          <h2 class="visit__title">Réservez le menu qui vous convient</h2>
+          <p class="visite__text">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins
+          </p>
+          <button class="btn visit__btn">Explorer nos restaurants</button>
+        </section>
+
+        <section class="process__section">
+          <div class="process__section__box">
+            <h2 class="process__section__box__title">Fonctionnment</h2>
+            <div class="process__section__box_choices">
+              <div class="choice">
+                <p class="choice__number">1</p>
+                <i class="choice__fa fa-solid fa-mobile-screen-button"></i>
+                <p class="choice__text">Choisissez un restaurant</p>
+              </div>
+
+              <div class="choice">
+                <p class="choice__number">2</p>
+                <i class="choice__fa fa-solid fa-list-ul"></i>
+                <p class="choice__text">Composez votre menu</p>
+              </div>
+
+              <div class="choice">
+                <p class="choice__number">3</p>
+                <i class="choice__fa choice__fa-color fa-solid fa-store"></i>
+                <p class="choice__text">Dégustez au restaurant</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
