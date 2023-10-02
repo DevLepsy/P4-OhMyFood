@@ -1,0 +1,19 @@
+$white: #fff;
+$grey: #353535;
+$black: black;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: var(--Green, #99e2d0);
+$color-background: var(--Background, #f6f6f6);
+$color-background-2: var(--Grey-2, #eaeaea);
+$color-button-default: var(
+  --Button-Gradient,
+  linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+);
+$color-button-checked: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  ),
+  linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+$color-text-button-new: #008766;
