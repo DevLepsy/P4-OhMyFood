@@ -13,8 +13,138 @@
   src: url("../fonts/Shrikhand-Regular.ttf");
   font-weight: 400;
 }
+* {
+  font-family: "Roboto", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+input [type=checkbox] {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
 /**** COMPONENTS ****/
+.logo {
+  font-family: "Shrikhand", serif;
+  text-align: center;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.header-title {
+  font-size: 30px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+
 /****** LAYOUT ******/
+.visit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 288px;
+  background-color: var(--Background, #f7f7f7);
+}
+.visit__title {
+  width: 100%;
+  padding: 0 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.visit__text {
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 27px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+}
+.visit__btn {
+  padding: 0 20px;
+}
+
+.location {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: var(--Grey-2, #eaeaea);
+  color: #353535;
+}
+.location__text {
+  border: none;
+  background-color: var(--Grey-2, #eaeaea);
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  appearance: none;
+  width: 130px;
+  padding: 0;
+}
+.location__text:focus {
+  outline-color: black;
+}
+
+::placeholder {
+  color: #353535;
+  opacity: 1;
+}
+
 /****** PAGES ******/
 
 /*# sourceMappingURL=index.css.map */
