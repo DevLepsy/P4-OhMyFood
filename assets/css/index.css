@@ -165,12 +165,10 @@ a:focus {
 }
 
 .heart {
-  font-size: 25px;
   text-align: center;
-  width: 27px;
+  width: 22px;
   cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-  background-clip: text;
   color: transparent;
   position: relative;
   transform-origin: center;
@@ -302,6 +300,13 @@ a:focus {
   justify-content: center;
   padding: 50px 20px;
 }
+@media (min-width: 1024px) {
+  .process__section {
+    margin: 50px 12.5%;
+    padding: 50px 0;
+    justify-content: center;
+  }
+}
 .process__section__box {
   display: flex;
   flex-direction: column;
@@ -309,11 +314,33 @@ a:focus {
   width: 100%;
   max-width: 335px;
 }
+@media (min-width: 1024px) {
+  .process__section__box {
+    max-width: none;
+  }
+}
+@media (min-width: 1440px) {
+  .process__section__box {
+    max-width: 1440px;
+  }
+}
 .process__section__box__choices {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-left: 10px;
+}
+@media (min-width: 1024px) {
+  .process__section__box__choices {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .process__section__box__choices .choice {
+    width: 335px;
+  }
 }
 
 .restaurants__section {
@@ -322,6 +349,12 @@ a:focus {
   padding: 50px 15px;
   background-color: var(--Grey-2, #eaeaea);
 }
+@media (min-width: 1024px) {
+  .restaurants__section {
+    padding: 50px 12.5%;
+    justify-content: center;
+  }
+}
 .restaurants__section__box {
   display: flex;
   flex-direction: column;
@@ -329,10 +362,29 @@ a:focus {
   width: 100%;
   max-width: 490px;
 }
+@media (min-width: 1024px) {
+  .restaurants__section__box {
+    max-width: 1440px;
+  }
+}
 .restaurants__section__box__cards {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+@media (min-width: 1024px) {
+  .restaurants__section__box__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants__section__box__cards .restaurant-card {
+    width: 45.5%;
+  }
 }
 
 .footer-section {
