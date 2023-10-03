@@ -1,14 +1,49 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: $font-medium;
+  box-sizing: inherit;
 }
 
 body {
-  text-align: center;
-  font-family: $font-medium;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 li {
   list-style: none;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  color: black;
+  text-decoration: none;
 }
