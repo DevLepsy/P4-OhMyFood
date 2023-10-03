@@ -1,0 +1,29 @@
+.location {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: $color-background-2;
+  color: $grey;
+
+  &__text {
+    border: none;
+    background-color: $color-background-2;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    appearance: none;
+    width: 130px;
+    padding: 0;
+
+    &:focus {
+      outline-color: black;
+    }
+  }
+}
+
+::placeholder {
+  color: $grey;
+  opacity: 1;
+}
