@@ -1,0 +1,51 @@
+.love-box {
+  position: relative;
+}
+
+.love {
+  font-size: 25px;
+  text-align: center;
+  width: 27px;
+  cursor: pointer;
+  background: $color-button-checked;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  transform-origin: center;
+  transform: scale(0);
+  z-index: 1;
+}
+
+.love-empty {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 1px;
+  width: 27px;
+  height: 25px;
+  cursor: pointer;
+  transform-origin: center;
+  transform: scale(1);
+
+  z-index: 1;
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.checklove:checked + label .love {
+  animation: heart forwards;
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.checklove:checked + label .love-empty {
+  transform: scale(0);
+  z-index: 0;
+}
