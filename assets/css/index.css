@@ -152,7 +152,7 @@ a:focus {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurant-card__heart {
+.restaurant-card__love {
   position: absolute;
   width: 22px;
   height: 21px;
@@ -160,15 +160,18 @@ a:focus {
   bottom: 33px;
 }
 
-.heart-box {
+.love-box {
   position: relative;
 }
 
-.heart {
+.love {
+  font-size: 25px;
   text-align: center;
-  width: 22px;
+  width: 27px;
   cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   position: relative;
   transform-origin: center;
@@ -176,20 +179,34 @@ a:focus {
   z-index: 1;
 }
 
-.heart-empty {
+.love-empty {
   font-size: 25px;
   position: absolute;
-  inset: 0 0 0 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 1px;
   width: 27px;
   height: 25px;
   cursor: pointer;
   transform-origin: center;
   transform: scale(1);
-  transition: transform 0.2s;
   z-index: 1;
 }
-.heart-empty:active {
-  transform: scale(0.8);
+.love-empty:active {
+  transform: scale(1);
+}
+
+.checklove:checked + label .love {
+  animation: heart forwards;
+}
+.checklove:checked + label .love:active {
+  transform: scale(1);
+}
+
+.checklove:checked + label .love-empty {
+  transform: scale(0);
+  z-index: 0;
 }
 
 .header {
@@ -240,6 +257,36 @@ a:focus {
 }
 
 /****** LAYOUT ******/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loader__animation {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  border-top-color: transparent;
+  animation: loader-animation 1s ease-in-out infinite;
+}
+.loader.hidden {
+  display: none;
+}
+
+@keyframes loader-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .visit {
   display: flex;
   flex-direction: column;
@@ -433,6 +480,14 @@ a:focus {
   font-weight: 400;
 }
 
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /****** PAGES ******/
 
 /*# sourceMappingURL=index.css.map */
