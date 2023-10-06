@@ -1,8 +1,9 @@
-.header {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 63px;
+  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1;
@@ -12,5 +13,20 @@
   font-size: 30px;
   margin-top: 14px;
   margin-bottom: 5px;
-  text-align: center;
+}
+
+.header-return {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  margin-top: 23px;
+  margin-left: 23px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+
+  &__fa {
+    font-size: 20px;
+  }
 }
