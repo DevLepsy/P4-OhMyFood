@@ -1,0 +1,128 @@
+.plate-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 15px;
+  background-color: $white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 12px 15px;
+    width: 100%;
+    overflow: hidden;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      height: 42px;
+      overflow: hidden;
+
+      &__title {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &__subtitle {
+        font-size: 15px;
+        font-weight: 300;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__check {
+    display: flex;
+    min-width: 0px;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $color-tertiary;
+    color: $white;
+    font-size: 20px;
+    opacity: 0;
+    transform-origin: right;
+    transition: min-width 400ms, opacity 300ms;
+
+    .fa-solid {
+      width: 0;
+      transition: width 400ms, visibility 400ms;
+      visibility: hidden;
+    }
+  }
+}
+
+.checkplate:checked + label .plate-card__check {
+  min-width: 60px;
+  opacity: 1;
+}
+
+.checkplate:checked + label .plate-card__check .fa-solid {
+  width: 20px;
+  visibility: visible;
+}
+
+.entree {
+  animation: apparition 2000ms 0.5s forwards;
+}
+
+.entree1 {
+  animation: apparition 2000ms 0.75s forwards;
+}
+
+.entree2 {
+  animation: apparition 2000ms 1s forwards;
+}
+
+.entree3 {
+  animation: apparition 2000ms 1.3s forwards;
+}
+
+.entree4 {
+  animation: apparition 2000ms 1.6s forwards;
+}
+
+.plat {
+  animation: apparition 2000ms 1.9s forwards;
+}
+
+.plat1 {
+  animation: apparition 2000ms 2.2s forwards;
+}
+
+.plat2 {
+  animation: apparition 2000ms 2.5s forwards;
+}
+
+.plat3 {
+  animation: apparition 2000ms 2.8s forwards;
+}
+
+.dessert {
+  animation: apparition 2000ms 3.1s forwards;
+}
+
+.dessert1 {
+  animation: apparition 2000ms 3.4s forwards;
+}
+
+.dessert2 {
+  animation: apparition 2000ms 3.7s forwards;
+}
+
+.dessert3 {
+  animation: apparition 2000ms 4s forwards;
+}

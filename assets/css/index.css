@@ -198,10 +198,13 @@ a:focus {
 }
 
 .checklove:checked + label .love {
-  animation: heart forwards;
+  animation: heart 2000ms forwards;
 }
 .checklove:checked + label .love:active {
   transform: scale(1);
+}
+.checklove:checked + label .love:inactive {
+  transform: scale(0);
 }
 
 .checklove:checked + label .love-empty {
@@ -269,6 +272,129 @@ header {
 }
 .choice__fa--color {
   color: #9356dc;
+}
+
+.plate-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+}
+.plate-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 12px 15px;
+  width: 100%;
+  overflow: hidden;
+}
+.plate-card__content__text {
+  display: flex;
+  flex-direction: column;
+  height: 42px;
+  overflow: hidden;
+}
+.plate-card__content__text__title {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plate-card__content__text__subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plate-card__check {
+  display: flex;
+  min-width: 0px;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--Green, #99e2d0);
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  transform-origin: right;
+  transition: min-width 400ms, opacity 300ms;
+}
+.plate-card__check .fa-solid {
+  width: 0;
+  transition: width 400ms, visibility 400ms;
+  visibility: hidden;
+}
+
+.checkplate:checked + label .plate-card__check {
+  min-width: 60px;
+  opacity: 1;
+}
+
+.checkplate:checked + label .plate-card__check .fa-solid {
+  width: 20px;
+  visibility: visible;
+}
+
+.entree {
+  animation: apparition 2000ms 0.5s forwards;
+}
+
+.entree1 {
+  animation: apparition 2000ms 0.75s forwards;
+}
+
+.entree2 {
+  animation: apparition 2000ms 1s forwards;
+}
+
+.entree3 {
+  animation: apparition 2000ms 1.3s forwards;
+}
+
+.entree4 {
+  animation: apparition 2000ms 1.6s forwards;
+}
+
+.plat {
+  animation: apparition 2000ms 1.9s forwards;
+}
+
+.plat1 {
+  animation: apparition 2000ms 2.2s forwards;
+}
+
+.plat2 {
+  animation: apparition 2000ms 2.5s forwards;
+}
+
+.plat3 {
+  animation: apparition 2000ms 2.8s forwards;
+}
+
+.dessert {
+  animation: apparition 2000ms 3.1s forwards;
+}
+
+.dessert1 {
+  animation: apparition 2000ms 3.4s forwards;
+}
+
+.dessert2 {
+  animation: apparition 2000ms 3.7s forwards;
+}
+
+.dessert3 {
+  animation: apparition 2000ms 4s forwards;
 }
 
 /****** LAYOUT ******/
@@ -405,6 +531,79 @@ header {
   }
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+.menu__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -55px;
+  gap: 42px;
+  padding: 40px 13px;
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f7f7f7;
+  max-width: 1055px;
+}
+.menu__main__name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 341px;
+}
+.menu__main__name .love {
+  margin-right: 28px;
+}
+.menu__main__name .love-empty {
+  margin-right: 28px;
+}
+.menu__main__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 634px;
+}
+.menu__main__btn {
+  padding: 0 50px;
+}
+
+.plates {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+.plates__title {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0;
+}
+.plates__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-top: 4px;
+  background-color: var(--Green, #99e2d0);
+}
+.plates__box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .restaurants__section {
   display: flex;
   justify-content: center;
@@ -501,6 +700,36 @@ header {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translate(100%);
+    opacity: 0;
+  }
+  30% {
+    transform-origin: left;
+    transform: scale(0.5, 1.2) translate(-10px);
+  }
+  35% {
+    transform-origin: left;
+    transform: scale(1.1, 0.85) translate(-10px);
+  }
+  40% {
+    transform-origin: left;
+    transform: scale(0.8, 1.06) translate(-5px);
+  }
+  45% {
+    transform-origin: left;
+    transform: scale(1.03, 0.9) translate(5px);
+  }
+  50% {
+    transform-origin: left;
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
   }
 }
 /****** PAGES ******/

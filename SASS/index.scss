@@ -9,12 +9,14 @@
 @import "./components/_love";
 @import "./components/_header";
 @import "./components/choice.scss";
+@import "./components/plate-card";
 
 /****** LAYOUT ******/
 @import "./layout/_loader";
 @import "./layout/_visit";
 @import "./layout/_location";
 @import "./layout/_process";
+@import "./layout/_menu";
 @import "./layout/_operation";
 @import "./layout/_restaurants";
 @import "./components/_footer";

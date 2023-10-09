@@ -38,10 +38,14 @@
 }
 
 .checklove:checked + label .love {
-  animation: heart forwards;
+  animation: heart 2000ms forwards;
 
   &:active {
     transform: scale(1);
+  }
+
+  &:inactive {
+    transform: scale(0);
   }
 }
 

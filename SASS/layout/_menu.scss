@@ -1,0 +1,81 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -55px;
+    gap: 42px;
+    padding: 40px 13px;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $color-grey-light;
+    max-width: 1055px;
+
+    &__name {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 341px;
+
+      .love {
+        margin-right: 28px;
+      }
+
+      .love-empty {
+        margin-right: 28px;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+      max-width: 634px;
+    }
+
+    &__btn {
+      padding: 0 50px;
+    }
+  }
+}
+
+.plates {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0;
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      margin-top: 4px;
+      background-color: $color-tertiary;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
