@@ -11,7 +11,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  position: relative;
+  position: absolute;
   transform-origin: center;
   transform: scale(0);
   z-index: 1;
@@ -20,10 +20,7 @@
 .love-empty {
   font-size: 25px;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 1px;
+  inset: 0 0 0 1px;
   width: 27px;
   height: 25px;
   cursor: pointer;
@@ -38,14 +35,10 @@
 }
 
 .checklove:checked + label .love {
-  animation: heart 2000ms forwards;
+  animation: heart 0.8s ease-in-out forwards;
 
   &:active {
     transform: scale(1);
-  }
-
-  &:inactive {
-    transform: scale(0);
   }
 }
 
