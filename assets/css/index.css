@@ -421,10 +421,14 @@ header {
   animation: visibility 1.5s ease forwards;
 }
 .loader__ring {
-  position: absolute;
-  width: 50px;
-  height: 50px;
+  position: relative; /* changé de absolute à relative pour positionner le texte à l'intérieur */
+  width: 150px; /* augmenté pour accueillir le texte */
+  height: 150px;
   border-radius: 50%;
+  display: flex; /* ajouté pour centrer le texte */
+  justify-content: center;
+  align-items: center;
+  color: black; /* couleur du texte */
 }
 .loader__ring::after {
   content: "";
@@ -432,9 +436,24 @@ header {
   inset: 0;
   border-radius: 50%;
   border: 5px solid transparent;
+  border-top-color: white; /* couleur du loader */
   animation: rotate 2s linear infinite;
 }
+.loader__ring__text {
+  position: absolute;
+  text-align: center;
+  font-size: 20px; /* taille du texte */
+  z-index: 1; /* pour s'assurer que le texte est au-dessus du loader */
+}
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .visit {
   display: flex;
   flex-direction: column;
