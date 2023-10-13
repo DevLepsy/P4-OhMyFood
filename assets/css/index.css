@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", serif;
   box-sizing: inherit;
@@ -28,7 +29,7 @@ p {
   padding: 0;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   display: none;
 }
 
@@ -61,10 +62,7 @@ a:focus {
   cursor: pointer;
   color: white;
   font-size: 16px;
-  background: var(
-    --Button-Gradient,
-    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-  );
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
@@ -77,12 +75,7 @@ a:focus {
   position: absolute;
   inset: 0;
   border-radius: 25px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 255, 255, 0.15) 100%
-    ),
-    linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
   z-index: -1;
   opacity: 0;
@@ -179,12 +172,7 @@ label:hover .love {
   text-align: center;
   width: 27px;
   cursor: pointer;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 255, 255, 0.15) 100%
-    ),
-    linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
