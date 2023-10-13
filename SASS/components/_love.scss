@@ -27,7 +27,7 @@
   cursor: pointer;
   transform-origin: center;
   transform: scale(1);
-  z-index: 0; /* Mise à jour du z-index pour s'assurer que .love est au-dessus lors du survol */
+  z-index: 0;
 
   &:active {
     transform: scale(1);
@@ -36,13 +36,13 @@
 
 .love-box:hover .love {
   transform: scale(1);
-  z-index: 2; /* Pour le placer au-dessus de .love-empty lors du survol */
+  z-index: 2;
 }
 
 .checklove:checked + label .love {
   animation: heart 0.8s ease-in-out forwards;
   transform: scale(1);
-  z-index: 3; /* Ceci le place au-dessus de .love et .love-empty lorsqu'il est coché */
+  z-index: 3;
 
   &:active {
     transform: scale(1);
