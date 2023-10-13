@@ -1,24 +1,24 @@
-@import "./base/_colors";
-@import "./base/fonts/_font";
-@import "./base/_global";
+@import "./base/_colors.scss";
+@import "./base/fonts/_font.scss";
+@import "./base/_global.scss";
 
 /**** COMPONENTS ****/
-@import "./components/_logo";
-@import "./components/_button";
-@import "./components/_restaurant-card";
-@import "./components/_love";
-@import "./components/_header";
+@import "./components/_logo.scss";
+@import "./components/_button.scss";
+@import "./components/_restaurant-card.scss";
+@import "./components/_love.scss";
+@import "./components/_header.scss";
 @import "./components/choice.scss";
-@import "./components/plate-card";
+@import "./components/plate-card.scss";
 
 /****** LAYOUT ******/
-@import "./layout/_loader";
-@import "./layout/_visit";
-@import "./layout/_location";
-@import "./layout/_process";
-@import "./layout/_menu";
-@import "./layout/_restaurants";
-@import "./components/_footer";
-@import "./layout/_keyframes";
+@import "./layout/_loader.scss";
+@import "./layout/_visit.scss";
+@import "./layout/_location.scss";
+@import "./layout/_process.scss";
+@import "./layout/_menu.scss";
+@import "./layout/_restaurants.scss";
+@import "./components/_footer.scss";
+@import "./layout/_keyframes.scss";
 
 /****** PAGES ******/
