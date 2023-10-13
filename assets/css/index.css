@@ -680,7 +680,7 @@ header {
   flex-direction: column;
   gap: 16px;
   background-color: #353535;
-  padding: 22px 0 22px 25px;
+  padding: 22px 25px;
 }
 @media (min-width: 768px) {
   .footer-section {

@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 16px;
   background-color: $grey;
-  padding: 22px 0 22px 25px;
+  padding: 22px 25px;
 
   @media (min-width: 768px) {
     flex-direction: row-reverse;
