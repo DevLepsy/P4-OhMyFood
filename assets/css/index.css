@@ -351,6 +351,14 @@ header {
   transition: width 400ms, visibility 400ms;
   visibility: hidden;
 }
+.plate-card:hover .plate-card__check {
+  min-width: 60px;
+  opacity: 1;
+}
+.plate-card:hover .plate-card__check .fa-solid {
+  width: 20px;
+  visibility: visible;
+}
 
 .checkplate:checked + label .plate-card__check {
   min-width: 60px;
