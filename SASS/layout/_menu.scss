@@ -29,13 +29,12 @@
       justify-content: space-between;
       width: 100%;
       max-width: 341px;
+      padding-right: 80px;
 
-      .love {
-        margin-right: 28px;
-      }
-
+      .love,
       .love-empty {
-        margin-right: 28px;
+        margin-right: 0;
+        padding-top: 5px;
       }
     }
 

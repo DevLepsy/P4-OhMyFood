@@ -589,12 +589,12 @@ header {
   justify-content: space-between;
   width: 100%;
   max-width: 341px;
+  padding-right: 80px;
 }
-.menu__main__name .love {
-  margin-right: 28px;
-}
+.menu__main__name .love,
 .menu__main__name .love-empty {
-  margin-right: 28px;
+  margin-right: 0;
+  padding-top: 5px;
 }
 .menu__main__cards {
   display: flex;
