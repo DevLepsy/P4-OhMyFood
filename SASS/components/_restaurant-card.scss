@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-shrink: 0;
   border-radius: 15px;
-
   height: 251px;
   background-color: $white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -63,12 +62,27 @@
       }
     }
   }
-
   &__love {
     position: absolute;
     width: 22px;
     height: 21px;
     right: 25px;
     bottom: 33px;
+    cursor: pointer;
   }
+}
+
+.love {
+  transform: scale(0);
+  z-index: 1;
+
+  label:hover & {
+    transform: scale(1);
+    z-index: 2;
+  }
+}
+
+.checklove:checked + label .love {
+  transform: scale(1);
+  z-index: 3;
 }

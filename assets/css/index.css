@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf");
@@ -158,6 +159,21 @@ a:focus {
   height: 21px;
   right: 25px;
   bottom: 33px;
+  cursor: pointer;
+}
+
+.love {
+  transform: scale(0);
+  z-index: 1;
+}
+label:hover .love {
+  transform: scale(1);
+  z-index: 2;
+}
+
+.checklove:checked + label .love {
+  transform: scale(1);
+  z-index: 3;
 }
 
 .love-box {
@@ -177,6 +193,7 @@ a:focus {
   transform-origin: center;
   transform: scale(0);
   z-index: 1;
+  transition: transform 0.3s ease; /* Ajout de la transition pour un effet plus doux */
 }
 
 .love-empty {
@@ -188,14 +205,21 @@ a:focus {
   cursor: pointer;
   transform-origin: center;
   transform: scale(1);
-  z-index: 1;
+  z-index: 0; /* Mise à jour du z-index pour s'assurer que .love est au-dessus lors du survol */
 }
 .love-empty:active {
   transform: scale(1);
 }
 
+.love-box:hover .love {
+  transform: scale(1);
+  z-index: 2; /* Pour le placer au-dessus de .love-empty lors du survol */
+}
+
 .checklove:checked + label .love {
   animation: heart 0.8s ease-in-out forwards;
+  transform: scale(1);
+  z-index: 3; /* Ceci le place au-dessus de .love et .love-empty lorsqu'il est coché */
 }
 .checklove:checked + label .love:active {
   transform: scale(1);
@@ -203,7 +227,6 @@ a:focus {
 
 .checklove:checked + label .love-empty {
   transform: scale(0);
-  z-index: 0;
 }
 
 header {
