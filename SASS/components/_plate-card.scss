@@ -10,6 +10,7 @@
   cursor: pointer;
   width: 100%;
   opacity: 0;
+  animation: apparition 2s forwards;
 
   &__content {
     display: flex;
@@ -55,11 +56,9 @@
     font-size: 20px;
     opacity: 0;
     transform-origin: right;
-    transition: min-width 400ms, opacity 300ms;
 
     .fa-solid {
       width: 0;
-      transition: width 400ms, visibility 400ms;
       visibility: hidden;
     }
   }
@@ -86,53 +85,41 @@
 }
 
 .entree {
-  animation: apparition 2000ms 0.5s forwards;
+  animation-delay: 0.5s;
 }
-
 .entree1 {
-  animation: apparition 2000ms 0.75s forwards;
+  animation-delay: 0.75s;
 }
-
 .entree2 {
-  animation: apparition 2000ms 1s forwards;
+  animation-delay: 1s;
 }
-
 .entree3 {
-  animation: apparition 2000ms 1.3s forwards;
+  animation-delay: 1.3s;
 }
-
 .entree4 {
-  animation: apparition 2000ms 1.6s forwards;
+  animation-delay: 1.6s;
 }
-
 .plat {
-  animation: apparition 2000ms 1.9s forwards;
+  animation-delay: 1.9s;
 }
-
 .plat1 {
-  animation: apparition 2000ms 2.2s forwards;
+  animation-delay: 2.2s;
 }
-
 .plat2 {
-  animation: apparition 2000ms 2.5s forwards;
+  animation-delay: 2.5s;
 }
-
 .plat3 {
-  animation: apparition 2000ms 2.8s forwards;
+  animation-delay: 2.8s;
 }
-
 .dessert {
-  animation: apparition 2000ms 3.1s forwards;
+  animation-delay: 3.1s;
 }
-
 .dessert1 {
-  animation: apparition 2000ms 3.4s forwards;
+  animation-delay: 3.4s;
 }
-
 .dessert2 {
-  animation: apparition 2000ms 3.7s forwards;
+  animation-delay: 3.7s;
 }
-
 .dessert3 {
-  animation: apparition 2000ms 4s forwards;
+  animation-delay: 4s;
 }
