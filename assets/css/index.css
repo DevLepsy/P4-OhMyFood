@@ -687,7 +687,7 @@ header {
     flex-direction: row-reverse;
     align-items: end;
     height: 114px;
-    padding: 30px 25px;
+    padding: 60px 60px;
     gap: 100px;
   }
 }
