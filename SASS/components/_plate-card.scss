@@ -1,3 +1,12 @@
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .plate-card {
   display: flex;
   justify-content: space-between;
@@ -10,7 +19,6 @@
   cursor: pointer;
   width: 100%;
   opacity: 0;
-  animation: apparition 2s forwards;
 
   &__content {
     display: flex;
@@ -56,9 +64,11 @@
     font-size: 20px;
     opacity: 0;
     transform-origin: right;
+    transition: min-width 400ms ease-in-out, opacity 300ms ease-in-out;
 
     .fa-solid {
       width: 0;
+      transition: width 400ms, visibility 400ms;
       visibility: hidden;
     }
   }
@@ -82,6 +92,22 @@
 .checkplate:checked + label .plate-card__check .fa-solid {
   width: 20px;
   visibility: visible;
+}
+
+.entree,
+.entree1,
+.entree2,
+.entree3,
+.entree4,
+.plat,
+.plat1,
+.plat2,
+.plat3,
+.dessert,
+.dessert1,
+.dessert2,
+.dessert3 {
+  animation: apparition 2000ms forwards ease-in-out;
 }
 
 .entree {
